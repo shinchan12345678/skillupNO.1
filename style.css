@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #EC715F;
+}
+
+.header-menu {
+  width: 1024px;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-menu >:first-child {
+  margin-right: auto;
+}
+
+.logo-image {
+  vertical-align: middle;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  padding: 30px;
+  font-size: 16px;
+  color: #FAFAFA;
+}
+
+.main-visual {
+  height: 650px;
+  background-image: url("img/mv.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-visual h1,.main-visual p {
+  color: #FAFAFA;
+  text-align: center;
+}
+
+.main-visual h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.main-visual p {
+  font-size: 20px;
+}
+
+.portfolio {
+  background-color: #ECEFF1;
+}
+
+.content-box {
+  padding: 90px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio .content-box{
+  width: 920px; 
+}
+
+.content-box h2 {
+  font-size: 32px;
+  padding-bottom: 8px;
+  /* border-width: 70px; */
+  position: relative;
+}
+
+.content-box>h2::after {
+  /* width: 70px;
+  height: 3px;
+  background-color: #EC715F; */
+  content: '';
+	display: block;
+	position: absolute;
+	left: 50%; /* 位置調整 */
+	transform: translate(-50%); /* 位置調整 */
+	bottom: 0px; /* 下線の上下位置調整 */
+	width: 70px; /* 下線の幅 */
+	height: 3px; /* 下線の太さ */
+	background-color: #EC715F;; /* 下線の色 */
+}
+
+.content-box>p {
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+  margin: 30px auto;
+}
+
+.portfolio-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-box .pic:nth-child(1) {
+  width: 300px;
+  height: 250px;
+  background-image: url("img/sketch.jpg");
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.portfolio-box .pic:nth-child(2) {
+  width: 300px;
+  height: 250px;
+  background-image: url("img/webcamp.png");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.portfolio-box .pic:nth-child(3) {
+  width: 300px;
+  height: 250px;
+  background-image: url("img/write.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.portfolio-box .pic:nth-child(4) {
+  width: 300px;
+  height: 250px;
+  background-image: url("img/websuku.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-box .pic:nth-child(5) {
+  width: 300px;
+  height: 250px;
+  background-image: url("img/talk.jpg");
+  background-size: cover;
+  background-position: center;
+  margin:0 auto;
+}
+
+.portfolio-box .pic:nth-child(6) {
+  width: 300px;
+  height: 250px;
+  background-image: url("img/webcamp-mother.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.feature .content-box {
+  width: 980px;
+}
+
+.feature-box {
+  display: flex;
+}
+
+.feature-content {
+  width: 320px;
+}
+
+.feature-content i {
+  font-size: 60px;
+}
+
+.icon-tag {
+  text-align: center;
+}
+
+.feature-content>h3 {
+  margin: 10px auto;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.feature-content:nth-child(2) {
+  margin: 0 10px;
+}
+
+.profile .content-box {
+  width: 1024px;
+}
+
+.profile-box {
+  display: flex;
+}
+
+.profile-content {
+  width: 512px;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.profile-content .icon {
+  text-align: center;
+}
+
+.my-icon {
+  border-radius: 50%;
+}
+
+.profile-content h4{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.profile-content :nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.contact .content-box {
+  width: 800px;
+}
+
+.contact-box {
+  display: flex;
+}
+
+.contact-content {
+  width: 400px;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.contact-tool {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.contact-tool h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.contact-tool p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.sns-icon {
+  font-size: 50px;
+}
+
+.sns-icon i:nth-child(2) {
+  padding: 0 20px;
+}
+
+footer {
+  background-color: #EC715F;
+  text-align: center;
+  line-height: 70px;
+  height: 70px;
+  color: #FAFAFA;
+}
+
+@media screen and (max-width:768px) {
+  .header-menu {
+    width: 90%;
+    height: 50px;
+  }
+
+  .logo-image {
+    height: 50px;
+  }
+}
